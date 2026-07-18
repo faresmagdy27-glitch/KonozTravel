@@ -1,0 +1,126 @@
+/*==========================
+WHY KONOZ
+==========================*/
+
+.why-konoz{
+
+    padding:120px 0;
+
+    background:#f8f9fb;
+
+}
+
+.why-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.why-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.why-content span{
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.why-content h2{
+
+    font-size:48px;
+
+    color:#0D2C54;
+
+    margin:20px 0;
+
+}
+
+.why-content p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.why-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.why-item{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+}
+
+.why-item i{
+
+    color:#D4AF37;
+
+    font-size:28px;
+
+    margin-top:5px;
+
+}
+
+.why-item h4{
+
+    margin-bottom:6px;
+
+    color:#0D2C54;
+
+}
+
+.why-item p{
+
+    margin:0;
+
+}.social-links a{
+    transition:.3s;
+}
+
+.social-links a:nth-child(1):hover{
+    background:#E1306C;
+}
+
+.social-links a:nth-child(2):hover{
+    background:#FFFC00;
+    color:#000;
+}
+
+.social-links a:nth-child(3):hover{
+    background:#000;
+}
+
+.social-links a:nth-child(4):hover{
+    background:#0A66C2;
+}

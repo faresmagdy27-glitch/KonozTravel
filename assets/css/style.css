@@ -1,0 +1,624 @@
+/* ==========================================
+   KONOZ TRAVEL
+   Global Styles
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    /* Luxury Colors */
+
+    --primary:#C8A96A;
+    --secondary:#E2C58B;
+    --gold:#C8A96A;
+
+    --dark:#111111;
+
+    --white:#FFFFFF;
+
+    --light:#F7F7F7;
+
+    --gray:#777777;
+
+    /* Effects */
+
+    --shadow:0 20px 60px rgba(0,0,0,.15);
+
+    --transition:.35s ease;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--dark);
+
+    background:#fff;
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:min(90%,1300px);
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:100px 0;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    outline:none;
+
+}/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.why-container{
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+}
+
+.why-image img{
+    width:100%;
+    display:block;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.why-subtitle{
+    color:#CFAF63;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.why-content h2{
+    margin:15px 0 25px;
+    font-size:52px;
+    color:#0F2E63;
+}
+
+.why-content p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.why-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.why-item{
+    display:flex;
+    gap:18px;
+}
+
+.why-item i{
+    width:52px;
+    height:52px;
+    background:#CFAF63;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+}
+
+.why-item h4{
+    margin-bottom:8px;
+    color:#0F2E63;
+}
+
+.why-item p{
+    margin:0;
+}
+
+@media(max-width:768px){
+
+    .why-container{
+        grid-template-columns:1fr;
+    }
+
+    .why-list{
+        grid-template-columns:1fr;
+    }
+
+}/*==========================
+TESTIMONIALS
+==========================*/
+
+.testimonials{
+
+    padding:120px 0;
+
+    background:#f8f9fb;
+
+}
+
+.testimonial-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.testimonial-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    border:1px solid #eee;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.stars{
+
+    color:#D4AF37;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+}
+
+.testimonial-text{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+    font-size:16px;
+
+    font-style:italic;
+
+}
+
+.client{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.client img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.client h4{
+
+    color:#0D2C54;
+
+    margin-bottom:4px;
+
+}
+
+.client span{
+
+    color:#888;
+
+    font-size:14px;
+
+}/*==========================
+CTA SECTION
+==========================*/
+
+.cta-section{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:
+    linear-gradient(rgba(13,44,84,.75), rgba(13,44,84,.75)),
+    url('assets/images/Hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.cta-content{
+
+    max-width:800px;
+
+    margin:auto;
+
+    position:relative;
+    z-index:2;
+}
+
+.cta-content span{
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+}
+
+.cta-content h2{
+
+    font-size:36px;
+
+    margin:25px 0;
+
+}
+
+.cta-content p{
+
+    color:rgba(255,255,255,.85);
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.cta-buttons{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#D4AF37;
+
+    color:#fff;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.btn-secondary{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.btn-primary:hover{
+
+    background:#fff;
+
+    color:#0D2C54;
+}
+
+.btn-secondary:hover{
+
+    background:#fff;
+
+    color:#0D2C54;
+}/*==========================
+FOOTER
+==========================*/
+
+.footer{
+
+    background:#0D2C54;
+
+    color:#fff;
+
+    padding:90px 0 30px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.2fr;
+
+    gap:60px;
+
+}
+
+.footer-logo{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-column p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.footer-column h3{
+
+    margin-bottom:25px;
+
+    color:#D4AF37;
+
+}
+
+.footer-column ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer-column li{
+
+    margin-bottom:15px;
+
+    color:#ddd;
+
+}
+
+.footer-column a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#D4AF37;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#ffffff10;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#D4AF37;
+
+    transform:translateY(-4px);
+
+}
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    color:#bbb;
+
+}/*==========================
+FLOATING WHATSAPP
+==========================*/
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:70px;
+
+    height:70px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:36px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.25);
+
+    z-index:9999;
+
+    transition:.35s;
+
+    text-decoration:none;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:translateY(-8px) scale(1.08);
+
+    box-shadow:0 20px 40px rgba(37,211,102,.45);
+
+}
+
+.whatsapp-float::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    animation:whatsappPulse 2s infinite;
+
+    z-index:-1;
+
+}
+
+@keyframes whatsappPulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.6;
+
+    }
+
+    70%{
+
+        transform:scale(1.6);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1.6);
+
+        opacity:0;
+
+    }
+
+}

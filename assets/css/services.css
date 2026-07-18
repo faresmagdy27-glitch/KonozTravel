@@ -1,0 +1,165 @@
+/*==============================
+SERVICES
+==============================*/
+
+.services{
+
+    padding:120px 0;
+
+    background:#f7f8fa;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:#cfae63;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+    font-size:44px;
+
+    margin:15px 0;
+
+    color:#0D2C54;
+
+}
+
+.section-title p{
+
+    color:#777;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    position:relative;
+
+    height:420px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.service-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.service-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(to top,rgba(0,0,0,.82),rgba(0,0,0,.20));
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:35px;
+
+    color:white;
+
+}
+
+.service-overlay i{
+
+    width:70px;
+
+    height:70px;
+
+    background:#cfae63;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+.service-overlay h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.service-overlay p{
+
+    line-height:1.7;
+
+    color:#ddd;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.service-card:hover{
+
+    box-shadow:0 30px 60px rgba(0,0,0,.25);
+
+}
