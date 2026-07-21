@@ -7,7 +7,7 @@
     min-height:100vh;
     display:flex;
     align-items:center;
-    background:url("../images/hero1.jpg") center center/cover no-repeat;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
     overflow:hidden;
 }
 
