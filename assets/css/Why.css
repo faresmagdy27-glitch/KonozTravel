@@ -1,24 +1,30 @@
-/*==========================
-WHY KONOZ
-==========================*/
+/*=========================================
+        WHY CHOOSE US
+=========================================*/
 
-.why-konoz{
+.why-us{
 
     padding:120px 0;
 
-    background:#f8f9fb;
+    background:#f8fbff;
 
 }
 
-.why-wrapper{
+.why-container{
 
     display:grid;
 
     grid-template-columns:1fr 1fr;
 
-    gap:70px;
+    gap:80px;
 
     align-items:center;
+
+}
+
+.why-image{
+
+    position:relative;
 
 }
 
@@ -26,49 +32,67 @@ WHY KONOZ
 
     width:100%;
 
-    border-radius:24px;
+    border-radius:28px;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    display:block;
+
+    box-shadow:0 35px 70px rgba(0,0,0,.18);
+
+    transition:.5s;
 
 }
 
-.why-content span{
+.why-image img:hover{
 
-    color:#D4AF37;
+    transform:scale(1.03);
+
+}
+
+.why-subtitle{
+
+    color:var(--primary);
 
     font-weight:700;
 
     letter-spacing:2px;
 
+    display:inline-block;
+
+    margin-bottom:18px;
+
 }
 
 .why-content h2{
 
-    font-size:48px;
+    font-size:46px;
 
-    color:#0D2C54;
+    line-height:1.2;
 
-    margin:20px 0;
+    color:var(--dark);
+
+    margin-bottom:25px;
 
 }
 
-.why-content p{
+.why-content>p{
 
-    color:#666;
+    color:var(--gray);
+
+    font-size:18px;
 
     line-height:1.9;
 
-    margin-bottom:35px;
+    margin-bottom:40px;
 
 }
 
 .why-list{
 
-    display:flex;
+    display:grid;
 
-    flex-direction:column;
+    grid-template-columns:1fr 1fr;
 
-    gap:25px;
+    gap:22px;
 
 }
 
@@ -76,51 +100,124 @@ WHY KONOZ
 
     display:flex;
 
-    gap:20px;
+    gap:18px;
 
     align-items:flex-start;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.why-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
 
 }
 
 .why-item i{
 
-    color:#D4AF37;
+    width:60px;
 
-    font-size:28px;
+    height:60px;
 
-    margin-top:5px;
+    min-width:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:#fff;
+
+    font-size:24px;
 
 }
 
 .why-item h4{
 
-    margin-bottom:6px;
+    color:var(--dark);
 
-    color:#0D2C54;
+    margin-bottom:8px;
+
+    font-size:20px;
 
 }
 
 .why-item p{
 
-    margin:0;
+    color:var(--gray);
 
-}.social-links a{
-    transition:.3s;
+    line-height:1.7;
+
+    font-size:15px;
+
 }
 
-.social-links a:nth-child(1):hover{
-    background:#E1306C;
+/* Tablet */
+
+@media(max-width:1100px){
+
+.why-container{
+
+grid-template-columns:1fr;
+
 }
 
-.social-links a:nth-child(2):hover{
-    background:#FFFC00;
-    color:#000;
+.why-image{
+
+order:1;
+
 }
 
-.social-links a:nth-child(3):hover{
-    background:#000;
+.why-content{
+
+order:2;
+
 }
 
-.social-links a:nth-child(4):hover{
-    background:#0A66C2;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.why-us{
+
+padding:80px 0;
+
+}
+
+.why-content h2{
+
+font-size:34px;
+
+}
+
+.why-list{
+
+grid-template-columns:1fr;
+
+}
+
+.why-item{
+
+padding:20px;
+
+}
+
 }
