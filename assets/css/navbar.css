@@ -1,14 +1,21 @@
-/* ==========================================
+/* ===========================
    NAVBAR
-========================================== */
+=========================== */
 
 header{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
-    padding:25px 0;
+    z-index:9999;
+    padding:18px 0;
+    transition:.35s;
+}
+
+header.scrolled{
+    backdrop-filter:blur(18px);
+    background:rgba(8,18,35,.88);
+    box-shadow:0 10px 35px rgba(0,0,0,.18);
 }
 
 .navbar{
@@ -17,42 +24,21 @@ header{
     justify-content:space-between;
 }
 
-/* Logo */
-
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-}
-
 .logo img{
-
-    width:75px;
-
-    height:75px;
-
+    width:80px;
+    height:80px;
     object-fit:contain;
-
-    border-radius:12px;
-
     transition:.35s;
-
 }
 
 .logo img:hover{
-
     transform:scale(1.05);
-
 }
-
-/* Navigation */
 
 .nav-links{
     display:flex;
+    gap:38px;
     align-items:center;
-    gap:35px;
     list-style:none;
 }
 
@@ -61,11 +47,11 @@ header{
 }
 
 .nav-links a{
-    color:var(--white);
+    color:#fff;
+    text-decoration:none;
     font-size:16px;
     font-weight:500;
-    text-decoration:none;
-    transition:var(--transition);
+    transition:.3s;
 }
 
 .nav-links a:hover{
@@ -80,47 +66,34 @@ header{
     width:0;
     height:2px;
     background:var(--secondary);
-    transition:var(--transition);
+    transition:.35s;
 }
 
 .nav-links a:hover::after{
     width:100%;
 }
 
-/* Button */
-
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 30px;
-    background:var(--primary);
-    color:#fff;
-    border-radius:12px;
-    font-weight:600;
-    transition:var(--transition);
-    box-shadow:var(--shadow);
+.nav-btn{
+    padding:15px 34px;
+    border-radius:40px;
 }
 
-.btn:hover{
-    background:var(--secondary);
-    transform:translateY(-3px);
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
 }
 
 /* Tablet */
 
 @media(max-width:992px){
 
-    .navbar{
-        flex-direction:column;
-        gap:20px;
-    }
+.nav-links{
 
-    .nav-links{
-        gap:20px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+gap:24px;
+
+}
 
 }
 
@@ -128,17 +101,66 @@ header{
 
 @media(max-width:768px){
 
-    .navbar{
-        flex-direction:column;
-    }
+.menu-toggle{
 
-    .logo img{
-        height:48px;
-    }
+display:block;
 
-    .nav-links{
-        flex-direction:column;
-        gap:15px;
-    }
+z-index:10001;
+
+}
+
+.nav-links{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:100%;
+
+height:100vh;
+
+background:#081223;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+gap:35px;
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+right:0;
+
+}
+
+.nav-links a{
+
+font-size:24px;
+
+}
+
+.nav-btn{
+
+display:none;
+
+}
+
+.logo img{
+
+width:65px;
+
+height:65px;
+
+}
 
 }
