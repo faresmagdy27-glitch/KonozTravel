@@ -272,4 +272,122 @@ min-height:auto;
 
 }
 
+}/*=========================================
+      WHY BOOK WITH KONOZ
+=========================================*/
+
+.why-hotels{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.why-image img{
+
+    width:100%;
+
+    border-radius:28px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.why-content h2{
+
+    font-size:48px;
+
+    color:var(--dark);
+
+    margin:20px 0;
+
+}
+
+.why-content p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.benefits{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.benefit{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.benefit i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.benefit h4{
+
+    color:var(--dark);
+
+    margin-bottom:8px;
+
+}
+
+.benefit p{
+
+    margin:0;
+
+}
+
+@media(max-width:992px){
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
 }
