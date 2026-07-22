@@ -583,4 +583,64 @@ justify-content:center;
 
 }
 
+}/*=========================================
+            POLICY PAGE
+=========================================*/
+
+.policy-section{
+
+    padding:120px 0;
+
+    background:#f7f9fc;
+
+}
+
+.policy-card{
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.policy-card h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    font-size:30px;
+
+}
+
+.policy-card p{
+
+    line-height:2;
+
+    color:var(--gray);
+
+    font-size:17px;
+
+}
+
+@media(max-width:768px){
+
+.policy-card{
+
+padding:30px;
+
+}
+
+.policy-card h2{
+
+font-size:24px;
+
+}
+
 }
