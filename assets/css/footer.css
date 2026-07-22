@@ -1,0 +1,79 @@
+/*=========================================
+        PAYMENT METHODS
+=========================================*/
+
+.payment-methods{
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    margin-top:60px;
+
+    padding-top:35px;
+
+    text-align:center;
+
+}
+
+.payment-methods h4{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
+.payment-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:28px;
+
+}
+
+.payment-icons img{
+
+    height:32px;
+
+    width:auto;
+
+    transition:.3s ease;
+
+    filter:grayscale(100%) brightness(1.2);
+
+    opacity:.85;
+
+}
+
+.payment-icons img:hover{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:translateY(-4px);
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    margin-top:40px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.7);
+
+}
