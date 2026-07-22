@@ -9,17 +9,17 @@ function getFormData() {
 
     return {
 
-        name: document.getElementById("name").value,
+        name: document.getElementById("name").value.trim(),
 
-        email: document.getElementById("email").value,
+        email: document.getElementById("email").value.trim(),
 
-        phone: document.getElementById("phone").value,
+        phone: document.getElementById("phone").value.trim(),
 
-        country: document.getElementById("country").value,
+        country: document.getElementById("country").value.trim(),
 
         service: document.getElementById("service").value,
 
-        destination: document.getElementById("destination").value,
+        destination: document.getElementById("destination").value.trim(),
 
         checkin: document.getElementById("checkin").value,
 
@@ -27,15 +27,85 @@ function getFormData() {
 
         guests: document.getElementById("guests").value,
 
-        message: document.getElementById("message").value
+        message: document.getElementById("message").value.trim()
 
     };
 
 }
+function validateForm(data){
 
+    if(data.name === ""){
+
+        alert("Please enter your full name.");
+
+        return false;
+
+    }
+
+    if(data.email === ""){
+
+        alert("Please enter your email address.");
+
+        return false;
+
+    }
+
+    if(!data.email.includes("@")){
+
+        alert("Please enter a valid email address.");
+
+        return false;
+
+    }
+
+    if(data.phone === ""){
+
+        alert("Please enter your WhatsApp number.");
+
+        return false;
+
+    }
+
+    if(data.destination === ""){
+
+        alert("Please enter your destination.");
+
+        return false;
+
+    }
+
+    if(data.checkin === ""){
+
+        alert("Please select your check-in date.");
+
+        return false;
+
+    }
+
+    if(data.checkout === ""){
+
+        alert("Please select your check-out date.");
+
+        return false;
+
+    }
+
+    if(data.checkout < data.checkin){
+
+        alert("Check-out date must be after check-in date.");
+
+        return false;
+
+    }
+
+    return true;
+
+}
 whatsappBtn.addEventListener("click", () => {
 
     const d = getFormData();
+
+    if(!validateForm(d)) return;
 
     const text = `Hello Konoz Travel,
 
@@ -83,6 +153,8 @@ ${d.message}`;
 emailBtn.addEventListener("click", () => {
 
     const d = getFormData();
+
+    if(!validateForm(d)) return;
 
     const subject = "Luxury Travel Inquiry";
 
