@@ -469,4 +469,118 @@ grid-template-columns:1fr;
 
 }
 
+}/*=========================================
+        WHY CHOOSE KONOZ
+=========================================*/
+
+.choose-konoz{
+
+    padding:120px 0;
+
+    background:#f8fbff;
+
+}
+
+.choose-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.choose-content h2{
+
+    font-size:46px;
+
+    margin:20px 0;
+
+    color:var(--dark);
+
+}
+
+.choose-content p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.choose-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.choose-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+.choose-item i{
+
+    color:var(--secondary);
+
+    font-size:22px;
+
+}
+
+.choose-image img{
+
+    width:100%;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.choose-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+@media(max-width:992px){
+
+.choose-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.choose-content{
+
+text-align:center;
+
+}
+
+.choose-item{
+
+justify-content:center;
+
+}
+
 }
