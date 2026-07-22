@@ -235,4 +235,238 @@ grid-template-columns:1fr;
 
 }
 
+}/*=========================================
+        MISSION SECTION
+=========================================*/
+
+.mission-section{
+
+    padding:120px 0;
+
+    background:#f8fbff;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.mission-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.mission-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.mission-icon i{
+
+    color:#fff;
+
+    font-size:36px;
+
+}
+
+.mission-card h3{
+
+    font-size:28px;
+
+    color:var(--dark);
+
+    margin-bottom:20px;
+
+}
+
+.mission-card p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+}
+
+@media(max-width:992px){
+
+.mission-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}/*=========================================
+        THE KONOZ JOURNEY
+=========================================*/
+
+.journey-section{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.journey-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.journey-card{
+
+    position:relative;
+
+    background:#fff;
+
+    padding:45px 30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.journey-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
+
+}
+
+.journey-number{
+
+    position:absolute;
+
+    top:18px;
+
+    right:20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:rgba(29,95,167,.12);
+
+}
+
+.journey-card i{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    margin-bottom:28px;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:#fff;
+
+    font-size:34px;
+
+}
+
+.journey-card h3{
+
+    margin-bottom:18px;
+
+    color:var(--dark);
+
+    font-size:24px;
+
+}
+
+.journey-card p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+}
+
+@media(max-width:1100px){
+
+.journey-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.journey-grid{
+
+grid-template-columns:1fr;
+
+}
+
 }
