@@ -3,15 +3,26 @@
 ========================================== */
 
 header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:9999;
-    padding:20px 0;
-    transition:.35s ease;
-}
 
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    padding:20px 0;
+
+    transition:.35s ease;
+
+    background:rgba(8,22,45,.92);
+
+    backdrop-filter:blur(16px);
+
+}
 header.scrolled{
     background:rgba(8,22,45,.92);
     backdrop-filter:blur(16px);
@@ -27,13 +38,13 @@ header.scrolled{
 
 .logo img{
 
-    width:95px;
+    width:auto;
 
-    height:95px;
+    height:72px;
 
     object-fit:contain;
 
-    transition:.35s;
+    display:block;
 
 }
 
