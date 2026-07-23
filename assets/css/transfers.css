@@ -1,0 +1,383 @@
+/* ==========================================
+   TRANSFER HERO
+========================================== */
+
+.transfer-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(7,26,51,.65),rgba(7,26,51,.70)),
+    url("../images/service-transfer.jpg") center/cover;
+
+    color:#fff;
+
+}
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.12);
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+}
+
+.transfer-hero h1{
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+}
+
+.transfer-hero p{
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    color:rgba(255,255,255,.92);
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline{
+
+    padding:15px 34px;
+
+    border:2px solid #fff;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.btn-outline:hover{
+
+    background:#fff;
+
+    color:var(--dark);
+
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin:18px 0;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services-section{
+
+    padding:110px 0;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:18px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   FLEET
+========================================== */
+
+.fleet{
+
+    padding:110px 0;
+
+    background:#f8fafc;
+
+}
+
+.fleet-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.fleet-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.fleet-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.fleet-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.fleet-card h3{
+
+    margin:25px 25px 10px;
+
+}
+
+.fleet-card p{
+
+    margin:0 25px 30px;
+
+    color:#666;
+
+}
+
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-transfer{
+
+    padding:110px 0;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.why-grid div{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+}
+
+.why-grid i{
+
+    font-size:34px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.why-grid h3{
+
+    margin-bottom:15px;
+
+}
+
+.why-grid p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.services-grid,
+.fleet-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.transfer-hero h1{
+
+font-size:48px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.services-grid,
+.fleet-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.transfer-hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.transfer-hero h1{
+
+font-size:38px;
+
+}
+
+}
