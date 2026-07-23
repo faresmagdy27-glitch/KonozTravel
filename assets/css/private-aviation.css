@@ -1,0 +1,307 @@
+/* ==========================================
+   PRIVATE AVIATION HERO
+========================================== */
+
+.private-hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(6,18,36,.65),rgba(6,18,36,.70)),
+    url("../images/private-jet-hero.jpg") center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.private-hero .hero-content{
+    max-width:650px;
+}
+
+.hero-tag{
+    display:inline-block;
+    padding:10px 22px;
+    background:rgba(255,255,255,.12);
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.private-hero h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.private-hero p{
+    font-size:19px;
+    line-height:1.9;
+    color:#e8edf5;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-outline{
+    padding:16px 34px;
+    border:2px solid rgba(255,255,255,.4);
+    border-radius:50px;
+    color:#fff;
+    text-decoration:none;
+    transition:.35s;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:var(--dark);
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:var(--secondary);
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    font-size:42px;
+    margin:15px 0;
+    color:var(--dark);
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#6d7682;
+    line-height:1.8;
+}
+
+/* ==========================================
+   AIRCRAFT
+========================================== */
+
+.aircraft{
+    padding:110px 0;
+    background:#f8fafc;
+}
+
+.aircraft-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.aircraft-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.aircraft-card:hover{
+    transform:translateY(-10px);
+}
+
+.aircraft-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.aircraft-content{
+    padding:30px;
+}
+
+.aircraft-content h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.aircraft-content p{
+    color:#6f7680;
+    line-height:1.8;
+}
+
+.aircraft-info{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    color:#555;
+}
+
+/* ==========================================
+   WHY PRIVATE
+========================================== */
+
+.why-private{
+    padding:110px 0;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    text-align:center;
+    background:#fff;
+    padding:45px 30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+}
+
+.why-card i{
+    font-size:46px;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   ROUTES
+========================================== */
+
+.routes{
+    padding:110px 0;
+    background:#f8fafc;
+}
+
+.routes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.route-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.07);
+}
+
+.route-card h3{
+    color:var(--dark);
+    margin-bottom:10px;
+}
+
+.route-card p{
+    color:#777;
+}
+
+/* ==========================================
+   EXPERIENCE
+========================================== */
+
+.experience{
+    padding:120px 0;
+}
+
+.experience-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.experience img{
+    width:100%;
+    border-radius:25px;
+}
+
+.experience-list{
+    list-style:none;
+    margin-top:35px;
+}
+
+.experience-list li{
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.experience-list i{
+    color:var(--secondary);
+    margin-right:12px;
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.private-cta{
+    padding:110px 0;
+    background:#0a1f39;
+    text-align:center;
+    color:#fff;
+}
+
+.private-cta h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.private-cta p{
+    color:#d5dce7;
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.9;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+.private-hero h1{
+    font-size:48px;
+}
+
+.experience-wrapper{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.private-hero{
+    text-align:center;
+}
+
+.private-hero h1{
+    font-size:40px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.private-cta h2{
+    font-size:34px;
+}
+
+}
