@@ -198,4 +198,108 @@ gap:12px;
 
 }
 
+}/* ==========================================
+   DESTINATION HERO
+========================================== */
+
+.destination-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(8,22,45,.65),rgba(8,22,45,.70)),
+    url("../images/destinations-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:#fff;
+
+}
+
+.destination-hero .hero-content{
+
+    max-width:700px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:50px;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+    backdrop-filter:blur(8px);
+
+}
+
+.destination-hero h1{
+
+    font-size:68px;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.destination-hero p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#EEF3F8;
+
+    margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline{
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.btn-outline:hover{
+
+    background:#fff;
+
+    color:#0D2C54;
+
 }
