@@ -744,4 +744,140 @@ font-size:36px;
 
     margin-top:60px;
 
+}/* ==========================================
+   DESTINATION CTA
+========================================== */
+
+.destination-cta{
+
+    padding:140px 0;
+
+    background:
+    linear-gradient(rgba(7,26,51,.90),rgba(13,44,84,.90)),
+    url("../images/destination-cta.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.cta-subtitle{
+
+    display:inline-block;
+
+    letter-spacing:2px;
+
+    color:#39B8E8;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.destination-cta h2{
+
+    font-size:60px;
+
+    margin-bottom:30px;
+
+    line-height:1.2;
+
+}
+
+.destination-cta p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.88);
+
+    margin-bottom:50px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.destination-cta .btn{
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+}
+
+.destination-cta .btn-outline{
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.destination-cta .btn-outline:hover{
+
+    background:#fff;
+
+    color:#0D2C54;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.destination-cta h2{
+
+font-size:40px;
+
+}
+
+.destination-cta p{
+
+font-size:18px;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.cta-buttons a{
+
+width:100%;
+
+}
+
 }
