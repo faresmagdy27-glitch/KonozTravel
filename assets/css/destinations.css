@@ -570,4 +570,86 @@ font-size:36px;
 
 }
 
+}/* ==========================================
+   BEST TIME TO VISIT
+========================================== */
+
+.best-time{
+
+    padding:120px 0;
+
+    background:#F7F9FC;
+
+}
+
+.season-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.season-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.season-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.season-card h3{
+
+    font-size:28px;
+
+    color:var(--dark);
+
+    margin-bottom:15px;
+
+}
+
+.season-card span{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+.season-card p{
+
+    color:#6E7B8B;
+
+    line-height:1.8;
+
 }
