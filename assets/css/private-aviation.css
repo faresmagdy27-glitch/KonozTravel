@@ -238,4 +238,552 @@
 
     color:#6E7B8B;
 
+}/* ==========================================
+   AIRCRAFT SECTION
+========================================== */
+
+.aircraft-section{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.aircraft-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}
+
+.aircraft-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+
+}
+
+.aircraft-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.16);
+
+}
+
+.aircraft-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.aircraft-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.aircraft-content{
+
+    padding:30px;
+
+}
+
+.aircraft-content h3{
+
+    font-size:28px;
+
+    color:var(--dark);
+
+    margin-bottom:15px;
+
+}
+
+.aircraft-content p{
+
+    color:#6E7B8B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.aircraft-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid #ECECEC;
+
+    padding-top:18px;
+
+    font-size:15px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   WHY PRIVATE
+========================================== */
+
+.why-private{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.why-card i{
+
+    width:80px;
+
+    height:80px;
+
+    background:rgba(57,184,232,.12);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto auto 25px;
+
+    font-size:32px;
+
+    color:var(--secondary);
+
+}
+
+.why-card h3{
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+    color:var(--dark);
+
+}
+
+.why-card p{
+
+    color:#6E7B8B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   ROUTES
+========================================== */
+
+.routes{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.routes-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.route-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.route-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.route-card h3{
+
+    font-size:24px;
+
+    color:var(--dark);
+
+    margin-bottom:12px;
+
+}
+
+.route-card p{
+
+    color:#6E7B8B;
+
+}/* ==========================================
+   LUXURY EXPERIENCE
+========================================== */
+
+.experience{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.experience-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.experience img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.experience img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.experience h2{
+
+    font-size:46px;
+
+    color:var(--dark);
+
+    margin:20px 0;
+
+}
+
+.experience p{
+
+    color:#6E7B8B;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+.experience-list{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.experience-list li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    color:var(--dark);
+
+}
+
+.experience-list i{
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    background:rgba(57,184,232,.15);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--secondary);
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.private-cta{
+
+    padding:120px 0;
+
+    background:linear-gradient(135deg,#071A33,#0D2C54);
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.private-cta h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+}
+
+.private-cta p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.85);
+
+    margin-bottom:45px;
+
+}
+
+.private-cta .btn{
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   SMOOTH ANIMATIONS
+========================================== */
+
+.aircraft-card,
+.why-card,
+.route-card,
+.stat-card{
+
+    transition:all .35s ease;
+
+}
+
+.aircraft-card:hover,
+.why-card:hover,
+.route-card:hover,
+.stat-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.aircraft-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.routes-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:992px){
+
+.aviation-hero h1{
+
+font-size:52px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.experience-wrapper{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.aviation-hero{
+
+text-align:center;
+
+padding:140px 0 100px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.aviation-hero h1{
+
+font-size:40px;
+
+}
+
+.stats-grid,
+.aircraft-grid,
+.why-grid,
+.routes-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.experience h2{
+
+font-size:34px;
+
+}
+
+.private-cta h2{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons .btn,
+.btn-outline{
+
+width:100%;
+
+text-align:center;
+
+}
+
 }
