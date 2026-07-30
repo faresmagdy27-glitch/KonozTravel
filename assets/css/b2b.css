@@ -509,8 +509,6 @@
 }
 
 
-/* CONNECTING LINE */
-
 .advantage-workflow::before{
 
     content:"";
@@ -532,8 +530,6 @@
 }
 
 
-/* STEP */
-
 .advantage-step{
 
     position:relative;
@@ -544,8 +540,6 @@
 
 }
 
-
-/* NUMBER */
 
 .advantage-number{
 
@@ -608,8 +602,6 @@
 
 }
 
-
-/* HOVER */
 
 .advantage-step:hover .advantage-number{
 
@@ -780,6 +772,243 @@
 
 
 /* =====================================================
+   CONTACT & PAYMENT
+===================================================== */
+
+.b2b-contact-info{
+
+    padding:110px 0;
+
+    background:#F8F9FB;
+
+}
+
+
+.b2b-contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:40px;
+
+}
+
+
+.b2b-contact-box,
+.b2b-payment-box{
+
+    padding:45px;
+
+    background:#fff;
+
+    border:1px solid #eee;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.05);
+
+}
+
+
+.b2b-contact-label{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+}
+
+
+.b2b-contact-box h2,
+.b2b-payment-box h2{
+
+    margin-bottom:30px;
+
+    color:#0D2C54;
+
+    font-size:30px;
+
+    line-height:1.3;
+
+    font-weight:600;
+
+}
+
+
+.b2b-payment-box > p{
+
+    margin-bottom:30px;
+
+    color:#666;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+.contact-detail{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+
+.contact-detail i{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    flex-shrink:0;
+
+    background:#F8F4EA;
+
+    border-radius:50%;
+
+    color:var(--primary);
+
+}
+
+
+.contact-detail strong{
+
+    display:block;
+
+    margin-bottom:5px;
+
+    color:#0D2C54;
+
+    font-size:14px;
+
+}
+
+
+.contact-detail a,
+.contact-detail span{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+
+.contact-detail a{
+
+    transition:.3s ease;
+
+}
+
+
+.contact-detail a:hover{
+
+    color:var(--primary);
+
+}
+
+
+/* =====================================================
+   PAYMENT METHODS
+===================================================== */
+
+.payment-methods{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+.payment-method{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#F8F9FB;
+
+    border:1px solid #eee;
+
+    border-radius:14px;
+
+    color:#555;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+
+.payment-method i{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+
+/* LAST PAYMENT METHOD */
+
+.payment-method:last-child{
+
+    grid-column:1 / -1;
+
+    justify-content:center;
+
+}
+
+
+/* =====================================================
    PARTNERSHIP CTA
 ===================================================== */
 
@@ -943,6 +1172,14 @@
 
     }
 
+
+    .b2b-contact-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
 }
 
 
@@ -1086,6 +1323,31 @@
 
     }
 
+
+    /* CONTACT */
+
+    .b2b-contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .b2b-contact-box,
+    .b2b-payment-box{
+
+        padding:32px 25px;
+
+    }
+
+
+    .b2b-contact-box h2,
+    .b2b-payment-box h2{
+
+        font-size:26px;
+
+    }
+
 }
 
 
@@ -1115,6 +1377,20 @@
     .advantage-workflow{
 
         gap:40px;
+
+    }
+
+
+    .payment-methods{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .payment-method:last-child{
+
+        grid-column:auto;
 
     }
 
