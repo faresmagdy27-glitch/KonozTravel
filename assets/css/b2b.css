@@ -1,581 +1,860 @@
-/* =========================================
-   KONOZ B2B PAGE
-========================================= */
+/* =====================================================
+   KONOZ TRAVEL
+   B2B PAGE
+===================================================== */
 
 
-/* =========================================
-   B2B HERO
-========================================= */
+/* =====================================================
+   HERO
+===================================================== */
 
-.b2b-hero {
+.b2b-hero{
 
-    min-height: 680px;
+    position:relative;
 
-    position: relative;
+    min-height:820px;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    align-items:center;
 
-    background-image: url("../images/b2b-hero.jpg");
+    background-image:
+        url("../images/b2b-hero.jpg");
 
-    background-size: cover;
+    background-size:cover;
 
-    background-position: center;
+    background-position:center;
 
-    overflow: hidden;
+    overflow:hidden;
+
 }
 
 
-.b2b-overlay {
+.b2b-overlay{
 
-    position: absolute;
+    position:absolute;
 
-    inset: 0;
+    inset:0;
 
     background:
         linear-gradient(
             90deg,
-            rgba(13, 44, 84, 0.92) 0%,
-            rgba(13, 44, 84, 0.72) 45%,
-            rgba(13, 44, 84, 0.25) 100%
+            rgba(8,22,45,.90),
+            rgba(8,22,45,.72),
+            rgba(8,22,45,.40)
         );
 
 }
 
 
-.b2b-hero-content {
+.b2b-hero .container{
 
-    position: relative;
+    position:relative;
 
-    z-index: 2;
-
-    max-width: 850px;
-
-    padding-top: 60px;
+    z-index:2;
 
 }
 
 
-.b2b-label {
+.b2b-hero-content{
 
-    display: inline-block;
+    width:100%;
 
-    margin-bottom: 20px;
+    max-width:900px;
 
-    font-size: 13px;
+    margin:0 auto;
 
-    font-weight: 700;
+    padding-top:90px;
 
-    letter-spacing: 3px;
-
-    color: #39B8E8;
+    text-align:center;
 
 }
 
 
-.b2b-hero h1 {
+.b2b-label{
 
-    max-width: 850px;
+    display:inline-block;
 
-    margin: 0 0 25px;
+    margin-bottom:20px;
 
-    color: #FFFFFF;
+    color:var(--primary);
 
-    font-size: 58px;
+    font-size:14px;
 
-    line-height: 1.12;
+    font-weight:600;
 
-    font-weight: 700;
-
-}
-
-
-.b2b-hero h1 span {
-
-    color: #D4AF37;
+    letter-spacing:3px;
 
 }
 
 
-.b2b-hero p {
+.b2b-hero h1{
 
-    max-width: 650px;
+    max-width:900px;
 
-    margin-bottom: 35px;
+    margin:0 auto 25px;
 
-    color: rgba(255,255,255,0.88);
+    color:#fff;
 
-    font-size: 18px;
+    font-family:'Poppins',sans-serif;
 
-    line-height: 1.7;
+    font-size:58px;
 
-}
+    line-height:1.15;
 
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-.b2b-buttons {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
+    font-weight:600;
 
 }
 
 
-.b2b-buttons a {
+.b2b-hero h1 span{
 
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    min-height: 50px;
-
-    padding: 0 28px;
-
-    border-radius: 5px;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
+    color:var(--primary);
 
 }
 
 
-.b2b-buttons .btn-primary {
+.b2b-hero p{
 
-    background: #D4AF37;
+    max-width:700px;
 
-    color: #FFFFFF;
+    margin:0 auto 35px;
 
-}
+    color:rgba(255,255,255,.86);
 
+    font-size:17px;
 
-.b2b-buttons .btn-primary:hover {
-
-    background: #C19B2E;
-
-    transform: translateY(-2px);
+    line-height:1.8;
 
 }
 
 
-.b2b-buttons .btn-secondary {
+.b2b-buttons{
 
-    border: 1px solid rgba(255,255,255,0.7);
+    display:flex;
 
-    color: #FFFFFF;
+    justify-content:center;
 
-}
+    align-items:center;
 
+    gap:18px;
 
-.b2b-buttons .btn-secondary:hover {
-
-    background: #FFFFFF;
-
-    color: #0D2C54;
+    flex-wrap:wrap;
 
 }
 
 
-/* =========================================
-   ABOUT B2B
-========================================= */
+.b2b-primary-btn{
 
-.b2b-about {
+    display:inline-flex;
 
-    padding: 90px 0;
+    align-items:center;
 
-    background: #FFFFFF;
+    justify-content:center;
 
-}
+    padding:16px 40px;
 
+    background:var(--primary);
 
-.section-heading {
+    color:#fff;
 
-    max-width: 760px;
+    border-radius:50px;
 
-    margin: 0 auto 50px;
+    font-weight:600;
 
-    text-align: center;
-
-}
-
-
-.section-heading > span {
-
-    display: block;
-
-    margin-bottom: 12px;
-
-    color: #1D5FA7;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    letter-spacing: 2.5px;
+    transition:var(--transition);
 
 }
 
 
-.section-heading h2 {
+.b2b-primary-btn:hover{
 
-    margin-bottom: 18px;
+    background:var(--secondary);
 
-    color: #0D2C54;
+    color:#fff;
 
-    font-size: 38px;
-
-    line-height: 1.2;
+    transform:translateY(-3px);
 
 }
 
 
-.section-heading p {
+.b2b-secondary-btn{
 
-    color: #6E7B8B;
+    display:inline-flex;
 
-    font-size: 16px;
+    align-items:center;
 
-    line-height: 1.8;
+    justify-content:center;
+
+    padding:14px 38px;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
 
 }
 
 
-/* =========================================
+.b2b-secondary-btn:hover{
+
+    background:#fff;
+
+    color:#0D2C54;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+   HERO HIGHLIGHTS
+===================================================== */
+
+.b2b-hero-highlights{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:45px;
+
+    margin-top:45px;
+
+}
+
+
+.hero-highlight{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding-left:18px;
+
+    border-left:2px solid var(--primary);
+
+    text-align:left;
+
+}
+
+
+.hero-highlight strong{
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.hero-highlight span{
+
+    margin-top:3px;
+
+    color:rgba(255,255,255,.68);
+
+    font-size:11px;
+
+}
+
+
+/* =====================================================
+   GENERAL SECTION HEADING
+===================================================== */
+
+.b2b-section-heading{
+
+    max-width:800px;
+
+    margin:0 auto 65px;
+
+    text-align:center;
+
+}
+
+
+.b2b-section-heading > span{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+}
+
+
+.b2b-section-heading h2{
+
+    margin-bottom:20px;
+
+    color:#0D2C54;
+
+    font-size:44px;
+
+    line-height:1.25;
+
+    font-weight:600;
+
+}
+
+
+.b2b-section-heading p{
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.b2b-about{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+
+/* =====================================================
    WHY KONOZ
-========================================= */
+===================================================== */
 
-.why-konoz {
+.why-konoz{
 
-    padding: 90px 0;
+    padding:110px 0;
 
-    background: #F5F9FC;
-
-}
-
-
-/* =========================================
-   B2B CARDS
-========================================= */
-
-.b2b-cards {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    background:#F8F9FB;
 
 }
 
 
-.b2b-card {
+.b2b-benefits-grid{
 
-    padding: 35px 30px;
+    display:grid;
 
-    background: #FFFFFF;
+    grid-template-columns:
+        repeat(3,1fr);
 
-    border: 1px solid #E7EEF5;
-
-    border-radius: 10px;
-
-    transition: 0.35s ease;
+    gap:30px;
 
 }
 
 
-.b2b-card:hover {
+.b2b-benefit-card{
 
-    transform: translateY(-6px);
+    position:relative;
+
+    padding:40px 35px;
+
+    background:#fff;
+
+    border:1px solid #eee;
+
+    border-radius:20px;
+
+    transition:.35s ease;
+
+}
+
+
+.b2b-benefit-card:hover{
+
+    transform:translateY(-8px);
 
     box-shadow:
-        0 15px 35px rgba(13,44,84,0.10);
+        0 20px 50px rgba(0,0,0,.10);
 
 }
 
 
-.card-icon {
+.benefit-number{
 
-    width: 48px;
+    margin-bottom:22px;
 
-    height: 48px;
+    color:var(--primary);
 
-    display: flex;
+    font-size:14px;
 
-    align-items: center;
+    font-weight:600;
 
-    justify-content: center;
-
-    margin-bottom: 22px;
-
-    border-radius: 50%;
-
-    background: rgba(29,95,167,0.10);
-
-    color: #1D5FA7;
-
-    font-size: 19px;
-
-    font-weight: 700;
+    letter-spacing:2px;
 
 }
 
 
-.b2b-card h3 {
+.b2b-benefit-card h3{
 
-    margin-bottom: 12px;
+    margin-bottom:15px;
 
-    color: #0D2C54;
+    color:#0D2C54;
 
-    font-size: 18px;
+    font-size:20px;
 
-}
-
-
-.b2b-card p {
-
-    color: #6E7B8B;
-
-    font-size: 14px;
-
-    line-height: 1.7;
+    font-weight:600;
 
 }
 
 
-/* =========================================
+.b2b-benefit-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.b2b-services{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+
+.b2b-services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+
+.b2b-service-card{
+
+    padding:35px 28px;
+
+    border:1px solid #eee;
+
+    border-radius:20px;
+
+    transition:.35s ease;
+
+}
+
+
+.b2b-service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.08);
+
+}
+
+
+.service-icon{
+
+    margin-bottom:25px;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+}
+
+
+.b2b-service-card h3{
+
+    margin-bottom:14px;
+
+    color:#0D2C54;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+.b2b-service-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   NUMBERS
+===================================================== */
+
+.b2b-numbers{
+
+    padding:100px 0;
+
+    background:#F8F9FB;
+
+}
+
+
+.numbers-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.number-item{
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-right:1px solid #ddd;
+
+}
+
+
+.number-item:last-child{
+
+    border-right:none;
+
+}
+
+
+.number-item strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    font-weight:600;
+
+}
+
+
+.number-item span{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+/* =====================================================
    PARTNERSHIP CTA
-========================================= */
+===================================================== */
 
-.b2b-partner {
+.b2b-partner{
 
-    padding: 100px 20px;
+    position:relative;
 
-    text-align: center;
+    padding:130px 0;
 
-    background:
-
-        linear-gradient(
-            rgba(13,44,84,0.94),
-            rgba(13,44,84,0.94)
-        ),
-
+    background-image:
         url("../images/b2b-partner.jpg");
 
-    background-size: cover;
+    background-size:cover;
 
-    background-position: center;
+    background-position:center;
 
-}
+    text-align:center;
 
-
-.b2b-partner h2 {
-
-    margin-bottom: 15px;
-
-    color: #FFFFFF;
-
-    font-size: 40px;
+    overflow:hidden;
 
 }
 
 
-.b2b-partner p {
+.b2b-partner .b2b-overlay{
 
-    max-width: 600px;
-
-    margin: 0 auto 30px;
-
-    color: rgba(255,255,255,0.8);
-
-    font-size: 16px;
-
-    line-height: 1.7;
+    background:
+        linear-gradient(
+            rgba(8,22,45,.88),
+            rgba(8,22,45,.88)
+        );
 
 }
 
 
-.b2b-partner .btn-primary {
+.b2b-partner-content{
 
-    display: inline-flex;
+    position:relative;
 
-    align-items: center;
+    z-index:2;
 
-    justify-content: center;
+    max-width:750px;
 
-    min-height: 50px;
-
-    padding: 0 30px;
-
-    background: #D4AF37;
-
-    color: #FFFFFF;
-
-    border-radius: 5px;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
+    margin:auto;
 
 }
 
 
-.b2b-partner .btn-primary:hover {
+.b2b-partner-content > span{
 
-    background: #C19B2E;
+    display:block;
 
-    transform: translateY(-2px);
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
 
 }
 
 
-/* =========================================
+.b2b-partner-content h2{
+
+    margin-bottom:20px;
+
+    color:#fff;
+
+    font-size:44px;
+
+    line-height:1.25;
+
+    font-weight:600;
+
+}
+
+
+.b2b-partner-content p{
+
+    margin-bottom:35px;
+
+    color:rgba(255,255,255,.82);
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+
+
+/* =====================================================
    RESPONSIVE
-========================================= */
+===================================================== */
 
-@media (max-width: 992px) {
+@media(max-width:1100px){
 
-    .b2b-hero h1 {
+    .b2b-services-grid{
 
-        font-size: 46px;
-
-    }
-
-
-    .b2b-cards {
-
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2,1fr);
 
     }
 
 }
 
 
-@media (max-width: 768px) {
+@media(max-width:992px){
 
-    .b2b-hero {
+    .b2b-hero{
 
-        min-height: 620px;
-
-    }
-
-
-    .b2b-hero h1 {
-
-        font-size: 38px;
+        min-height:750px;
 
     }
 
 
-    .b2b-hero p {
+    .b2b-hero h1{
 
-        font-size: 16px;
-
-    }
-
-
-    .b2b-buttons {
-
-        flex-direction: column;
-
-        align-items: flex-start;
+        font-size:48px;
 
     }
 
 
-    .b2b-cards {
+    .b2b-benefits-grid{
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            repeat(2,1fr);
 
     }
 
 
-    .section-heading h2 {
+    .numbers-grid{
 
-        font-size: 30px;
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .number-item{
+
+        border-right:none;
+
+        border-bottom:1px solid #ddd;
 
     }
 
 }
 
 
-@media (max-width: 480px) {
+@media(max-width:768px){
 
-    .b2b-hero h1 {
+    .b2b-hero{
 
-        font-size: 32px;
+        min-height:720px;
+
+    }
+
+
+    .b2b-hero-content{
+
+        padding-top:100px;
 
     }
 
 
-    .b2b-hero-content {
+    .b2b-hero h1{
 
-        padding: 40px 20px;
+        font-size:38px;
 
     }
 
-}/* =========================================
-   HERO HIGHLIGHTS
-========================================= */
 
-.b2b-hero-highlights {
+    .b2b-hero p{
 
-    display: flex;
+        font-size:15px;
 
-    gap: 35px;
+    }
 
-    margin-top: 38px;
+
+    .b2b-buttons{
+
+        flex-direction:column;
+
+    }
+
+
+    .b2b-primary-btn,
+    .b2b-secondary-btn{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+
+    .b2b-hero-highlights{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        align-items:flex-start;
+
+        width:max-content;
+
+        margin:40px auto 0;
+
+    }
+
+
+    .b2b-section-heading h2{
+
+        font-size:34px;
+
+    }
+
+
+    .b2b-benefits-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .b2b-services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .numbers-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .b2b-partner-content h2{
+
+        font-size:34px;
+
+    }
 
 }
 
 
-.hero-highlight {
+@media(max-width:480px){
 
-    display: flex;
+    .b2b-hero h1{
 
-    flex-direction: column;
+        font-size:32px;
 
-    padding-left: 15px;
-
-    border-left: 2px solid #D4AF37;
-
-}
+    }
 
 
-.hero-highlight strong {
+    .b2b-section-heading h2{
 
-    color: #FFFFFF;
+        font-size:29px;
 
-    font-size: 14px;
-
-    font-weight: 700;
-
-    margin-bottom: 4px;
-
-}
+    }
 
 
-.hero-highlight span {
+    .b2b-hero-highlights{
 
-    color: rgba(255,255,255,0.70);
+        width:100%;
 
-    font-size: 11px;
+    }
 
 }
