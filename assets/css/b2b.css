@@ -531,4 +531,51 @@
 
     }
 
+}/* =========================================
+   HERO HIGHLIGHTS
+========================================= */
+
+.b2b-hero-highlights {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 38px;
+
+}
+
+
+.hero-highlight {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding-left: 15px;
+
+    border-left: 2px solid #D4AF37;
+
+}
+
+
+.hero-highlight strong {
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 4px;
+
+}
+
+
+.hero-highlight span {
+
+    color: rgba(255,255,255,0.70);
+
+    font-size: 11px;
+
 }
