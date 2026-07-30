@@ -17,3 +17,43 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+
+// =========================
+// Mobile Hamburger Menu
+// =========================
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if(menuToggle && navLinks){
+
+    menuToggle.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
+
+// =========================
+// Close Mobile Menu
+// When clicking a navigation link
+// =========================
+
+if(navLinks){
+
+    const navItems = navLinks.querySelectorAll("a");
+
+    navItems.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+}
