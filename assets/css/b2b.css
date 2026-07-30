@@ -788,7 +788,44 @@
 
         min-height:720px;
 
-    }
+    .konoz-advantage{
+
+    padding:90px 0;
+
+}
+
+
+.advantage-workflow{
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+}
+
+
+.advantage-workflow::before{
+
+    top:30px;
+
+    bottom:30px;
+
+    left:50%;
+
+    right:auto;
+
+    width:1px;
+
+    height:auto;
+
+}
+
+
+.advantage-content p{
+
+    max-width:320px;
+
+}
 
 
     .b2b-hero-content{
@@ -902,5 +939,151 @@
         width:100%;
 
     }
+
+}/* =====================================================
+   THE KONOZ ADVANTAGE
+===================================================== */
+
+.konoz-advantage{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+
+.advantage-workflow{
+
+    position:relative;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:60px 40px;
+
+}
+
+
+/* CONNECTING LINE */
+
+.advantage-workflow::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:30px;
+
+    left:12%;
+
+    right:12%;
+
+    height:1px;
+
+    background:#E6E6E6;
+
+    z-index:0;
+
+}
+
+
+/* STEP */
+
+.advantage-step{
+
+    position:relative;
+
+    z-index:1;
+
+    text-align:center;
+
+}
+
+
+/* NUMBER */
+
+.advantage-number{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    margin:0 auto 25px;
+
+    background:#fff;
+
+    border:1px solid var(--primary);
+
+    border-radius:50%;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.06);
+
+}
+
+
+/* CONTENT */
+
+.advantage-content h3{
+
+    margin-bottom:12px;
+
+    color:#0D2C54;
+
+    font-size:19px;
+
+    font-weight:600;
+
+}
+
+
+.advantage-content p{
+
+    max-width:280px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* HOVER */
+
+.advantage-step:hover .advantage-number{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(200,169,106,.25);
+
+    transition:.35s ease;
 
 }
